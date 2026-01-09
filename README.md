@@ -96,7 +96,7 @@ JWT_SECRET=a_strong_secret_for_jwt
 PORT=5000
 ```
 
-The application will automatically use these variables if the `.env` file is present.
+The application will automatically use these variables if the `.env` file is present in it .
 
 ### 3. Start the Backend Server
 
