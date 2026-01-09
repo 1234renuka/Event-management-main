@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 app.use(cors({
-  origin: "https://event-management-main-jet.vercel.app/,event-management-main-n6mcdniq4-renuka-thakurs-projects.vercel.app",
+  origin: "https://event-management-main-jet.vercel.app/","event-management-main-n6mcdniq4-renuka-thakurs-projects.vercel.app",
   credentials: true,
 }));
 
