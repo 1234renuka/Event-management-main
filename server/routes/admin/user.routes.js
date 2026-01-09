@@ -5,9 +5,9 @@ import {
     removeUser,
     activateUser,
 } from "../../controllers/admin/user.controller.js";
-import authMiddleware from "../../middleware/auth.middleware.js";
+import authMiddleware from "../../middleware/auth.middleware.js"
 
-const router = express.Router();
+const router = express.Router()
 
 router.get("/users", authMiddleware, getAllUsers);
 router.post("/user/suspend/:userId", authMiddleware, suspendUser);
