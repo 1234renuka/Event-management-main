@@ -2,8 +2,9 @@ import express from "express";
 import authRouter from "./auth/auth.routes.js";
 import eventRouter from "./user/event.routes.js";
 import adminRouter from "./admin/user.routes.js";
-import adminEventRouter from "./admin/events.routes.js"
-import adminDashboardRouter from "./admin/dashboard.routes.js"
+import adminEventRouter from "./admin/events.routes.js";
+import adminDashboardRouter from "./admin/dashboard.routes.js";
+import bookingRoutes from "./routes/bookingRoutes.js";
 
 const router = express.Router();
 
@@ -12,5 +13,6 @@ router.use("/event", eventRouter);
 router.use("/admin", adminRouter);
 router.use("/admin/events", adminEventRouter);
 router.use("/admin/dashboard", adminDashboardRouter);
+router.use("/bookings", bookingRoutes); 
 
 export default router;
