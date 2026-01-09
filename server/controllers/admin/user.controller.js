@@ -17,7 +17,7 @@ export const getAllUsers = async (req, res) => {
   }
 };
 
-//suspend user
+
 export const suspendUser = async (req, res) => {
     const {  role } = req.user;
 
@@ -42,7 +42,7 @@ export const suspendUser = async (req, res) => {
   }
 }
 
-// remove user
+
 export const removeUser = async (req, res) => {
   const {  role } = req.user;
 
@@ -67,7 +67,7 @@ export const removeUser = async (req, res) => {
   }
 }
 
-// activate user
+
 export const activateUser = async (req, res) => {
   const {  role } = req.user;
 
